@@ -1,0 +1,162 @@
+{
+    "categorias": [
+      {
+        "titulo": "Node with Rocketseat",
+        "cor": "#8e44ad",
+        "link_extra": {
+          "text": "Rocketseat",
+          "url": "https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg"
+        },
+        "videos": [
+          {
+            "titulo": "Node.js: Iniciando da teoria à prática",
+            "url": "https://www.youtube.com/watch?v=DiXbJL3iWVs&list=PL85ITvJ7FLogMzb2s6K5wKpQK2nL76vUK&index=4"
+          },
+          {
+            "titulo": "SQL no Node.js com Knex.js",
+            "url": "https://www.youtube.com/watch?v=U7GjS3FuSkA&list=PL85ITvJ7FLogMzb2s6K5wKpQK2nL76vUK&index=3"
+          },
+          {
+            "titulo": "SQL no Node.js com Sequelize",
+            "url": "https://www.youtube.com/watch?v=Fbu7z5dXcRs&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=11"
+          },
+          {
+            "titulo": "Background jobs (filas) no Node.js com Redis",
+            "url": "https://www.youtube.com/watch?v=uonKHztGhko&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=10" 
+          },
+          {
+            "titulo": "Deploy de apps Node.js",
+            "url": "https://www.youtube.com/watch?v=ICIz5dE3Xfg&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=9" 
+          },
+          {
+            "titulo": "TypeScript, o início, de forma prática",
+            "url": "https://www.youtube.com/watch?v=0mYq5LrQN1s&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=5" 
+          },
+          {
+            "titulo": "[API NodeJS + Express + Mongo] Estrutura e cadastro",
+            "url": "https://www.youtube.com/watch?v=BN_8bCfVp88&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp"
+          },
+          {
+            "titulo": "[API NodeJS + Express + Mongo] Autenticação",
+            "url": "https://www.youtube.com/watch?v=KKTX1l3sZGk&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=2" 
+          },
+          {
+            "titulo": "[API NodeJS + Express + Mongo] Recuperação de senha com NodeMailer",
+            "url": "https://www.youtube.com/watch?v=Zwdv9RllPqU&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=3" 
+          },
+          {
+            "titulo": "[API NodeJS + Express + Mongo] CRUD e relacionamentos com MongoDB",
+            "url": "https://www.youtube.com/watch?v=GAZdUyIV3ms&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=4" 
+          }         
+        ]
+      },
+      {
+        "titulo": "ReactJS",
+        "cor": "#3498db",
+        "videos": [
+          {
+            "titulo": "React JS Curso Rápido",
+            "url": "https://www.youtube.com/watch?v=XQxitgyZ_S4&t=1370s"
+          },
+          {
+            "titulo": "ReactJS primeiros passos - Introdução Prática",
+            "url": "https://www.youtube.com/watch?v=IOJoJGDowEY"
+          },
+          {
+            "titulo": "React JS - Criando um App do Zero",
+            "url": "https://www.youtube.com/watch?v=tbLziJchz48&t=492s"
+          },
+          {
+            "titulo": "Estrutura de pastas para ReactJS/React Native",
+            "url": "https://www.youtube.com/watch?v=X2RKRKdqqwM"
+          }
+        ]
+      },
+      {
+        "titulo": "API in Nodejs",
+        "cor": "#9cd33b",
+        "link_extra": {
+          "text": "Criando APIs com NodeJs",
+          "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+        },
+        "videos": [
+          {
+            "titulo": "Criando APIs com NodeJs",
+            "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+          },
+          {
+            "titulo": "TypeScript com NodeJS do jeito certo!",
+            "url": "https://www.youtube.com/watch?v=aTf8QTjw4RE&t=22s"
+          },
+          {
+            "titulo": "Princípios SOLID em uma API REST com Node.js e TypeScript",
+            "url": "https://www.youtube.com/watch?v=vAV4Vy4jfkc"
+          },
+          {
+            "titulo": "API RESTful",
+            "url": "https://www.youtube.com/watch?v=Abo_GiaunlU"
+          },
+          {
+            "titulo": "Curso de Node.JS",
+            "url": "https://www.youtube.com/watch?v=LLqq6FemMNQ&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B"
+          }
+        ]
+      },
+      {
+        "titulo": "Nextjs",
+        "cor": "#16a085",
+        "videos": [
+          {
+            "titulo": "NextJS - O que é?",
+            "url": "https://www.youtube.com/watch?v=X3W-YFe2_io"
+          },
+          {
+            "titulo": "Tutorial NextJS Fullstack",
+            "url": "https://www.youtube.com/watch?v=MeYibJFi7p0&t=1s"
+          },
+          {
+            "titulo": "NEXT.JS: O FRAMEWORK QUE VOCÊ DEVERIA CONHECER",
+            "url": "https://www.youtube.com/watch?v=9eI0o8io7I0"
+          },
+          {
+            "titulo": " Introdução: Como criar site com React e Next.js",
+            "url": "https://www.youtube.com/watch?v=WRFzOcPNcfY&list=PLmY5AEiqDWwCKtqpOg7z4sJQLlULms9_K"
+          }
+        ]
+      },
+      {
+        "titulo": "More React",
+        "cor": "#2980b9",
+        "videos": [
+          {
+            "titulo": "React Hooks com TypeScript",
+            "url": "https://www.youtube.com/watch?v=GOB-lawExXc&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=8"
+          },
+          {
+            "titulo": "Formulários no ReactJS & React Native com Unform",
+            "url": "https://www.youtube.com/watch?v=P65RJTTqkN4&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=6"
+          },
+          {
+            "titulo": "Autenticação no React Native / ReactJS com Context API & Hooks",
+            "url": "https://www.youtube.com/watch?v=KISMYYXSIX8&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=3"
+          },
+          {
+            "titulo": "COMO MELHORAR SEU CODIGO JAVASCRIPT (ESLINT + PRETTIER + EDITORCONFIG) ",
+            "url": "https://www.youtube.com/watch?v=9UJYaAt7v2o&list=PLkFMdTTdI9c074NdAQwIIfB1QaE8y0pm7&index=2"
+          },
+          {
+            "titulo": "Qual a diferença entre SPA, SSG e SSR?",
+            "url": "https://www.youtube.com/watch?v=VM_ncQcQdmY&list=PLbV6TI03ZWYXRHSxSz3aV0IQaQsfrVZsf"
+          },
+          {
+            "titulo": "Como usar React Context (com Hooks)",
+            "url": "https://www.youtube.com/watch?v=FsCBw9X9U84&t=4s"
+          },
+          {
+            "titulo": "React Hooks - useState ",
+            "url": "https://www.youtube.com/watch?v=Z5zUmY01nrc"
+          }
+        ]
+      }
+    ]
+  }
