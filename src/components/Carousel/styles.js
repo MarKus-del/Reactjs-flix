@@ -19,6 +19,7 @@ export const Title = styled.h3`
 
 export const ExtraLink = styled.a`
   margin-left: 16px;
+  padding: 50px 0px;
   text-decoration: none;
   transition: opacity .3s;
   &:hover,
@@ -47,8 +48,9 @@ export const VideoCardList = styled.ul`
 `;
 
 export const VideoCardGroupContainer = styled.section`
-  color: white;
+  color: var(--white);
   min-height: 197px;
-  margin-left: 5%;
   margin-bottom: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
 `;

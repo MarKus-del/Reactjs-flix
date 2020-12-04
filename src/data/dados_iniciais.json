@@ -1,6 +1,48 @@
 {
     "categorias": [
       {
+        "titulo": "Aprendendo com a Alura",
+        "cor": "#2980b9",
+        "link_extra": {
+          "text": "Alura",
+          "url": "https://www.alura.com.br"
+        },
+        "videos": [
+          {
+            "titulo": "O que faz uma desenvolvedora front-end?",
+            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=4"
+          },
+          {
+            "titulo": "O que é JavaScript? ",
+            "url": "https://www.youtube.com/watch?v=NaVSbnnV75Q"
+          },
+          {
+            "titulo": "O que é uma Single-Page Application? (SPA)",
+            "url": "https://www.youtube.com/watch?v=opxYpCKzlLk&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=16"
+          },
+          {
+            "titulo": "O que é Node JS?",
+            "url": "https://www.youtube.com/watch?v=GKR6uSvEj8w&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=15"
+          },
+          {
+            "titulo": "O que é Biblioteca, Framework e API?",
+            "url": "https://www.youtube.com/watch?v=F0H4HPXdZog&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=8" 
+          },
+          {
+            "titulo": "O que é REST?",
+            "url": "https://www.youtube.com/watch?v=weQ8ssA6iBU&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=12" 
+          },
+          {
+            "titulo": "O que são Git e Github?",
+            "url": "https://www.youtube.com/watch?v=P4BNi_yPehc&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=24" 
+          },
+          {
+            "titulo": "GitHub sem linhas de comando: Github Desktop",
+            "url": "https://www.youtube.com/watch?v=vhqTiQdUHfY&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=25"
+          }        
+        ]
+      },
+      {
         "titulo": "Node with Rocketseat",
         "cor": "#8e44ad",
         "link_extra": {
@@ -53,6 +95,9 @@
       {
         "titulo": "ReactJS",
         "cor": "#3498db",
+        "link_extra": {
+          "text": "Primeiros passos com ReactJS"
+        },
         "videos": [
           {
             "titulo": "React JS Curso Rápido",
@@ -76,8 +121,7 @@
         "titulo": "API in Nodejs",
         "cor": "#9cd33b",
         "link_extra": {
-          "text": "Criando APIs com NodeJs",
-          "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+          "text": "Criação de API's em NodeJS"
         },
         "videos": [
           {
@@ -103,30 +147,11 @@
         ]
       },
       {
-        "titulo": "Nextjs",
-        "cor": "#16a085",
-        "videos": [
-          {
-            "titulo": "NextJS - O que é?",
-            "url": "https://www.youtube.com/watch?v=X3W-YFe2_io"
-          },
-          {
-            "titulo": "Tutorial NextJS Fullstack",
-            "url": "https://www.youtube.com/watch?v=MeYibJFi7p0&t=1s"
-          },
-          {
-            "titulo": "NEXT.JS: O FRAMEWORK QUE VOCÊ DEVERIA CONHECER",
-            "url": "https://www.youtube.com/watch?v=9eI0o8io7I0"
-          },
-          {
-            "titulo": " Introdução: Como criar site com React e Next.js",
-            "url": "https://www.youtube.com/watch?v=WRFzOcPNcfY&list=PLmY5AEiqDWwCKtqpOg7z4sJQLlULms9_K"
-          }
-        ]
-      },
-      {
         "titulo": "More React",
         "cor": "#2980b9",
+        "link_extra": {
+          "text": "Conhecendo mais afundo o ReactJS"
+        },
         "videos": [
           {
             "titulo": "React Hooks com TypeScript",
@@ -155,6 +180,31 @@
           {
             "titulo": "React Hooks - useState ",
             "url": "https://www.youtube.com/watch?v=Z5zUmY01nrc"
+          }
+        ]
+      },
+      {
+        "titulo": "Nextjs",
+        "cor": "#16a085",
+        "link_extra": {
+          "text": "Framework NextJS"
+        },
+        "videos": [
+          {
+            "titulo": "NextJS - O que é?",
+            "url": "https://www.youtube.com/watch?v=X3W-YFe2_io"
+          },
+          {
+            "titulo": "Tutorial NextJS Fullstack",
+            "url": "https://www.youtube.com/watch?v=MeYibJFi7p0&t=1s"
+          },
+          {
+            "titulo": "NEXT.JS: O FRAMEWORK QUE VOCÊ DEVERIA CONHECER",
+            "url": "https://www.youtube.com/watch?v=9eI0o8io7I0"
+          },
+          {
+            "titulo": " Introdução: Como criar site com React e Next.js",
+            "url": "https://www.youtube.com/watch?v=WRFzOcPNcfY&list=PLmY5AEiqDWwCKtqpOg7z4sJQLlULms9_K"
           }
         ]
       }
