@@ -12,7 +12,7 @@ function MenuLateral({ categoryLinks }) {
   const Links = categoryLinks;
 
   const renderListPlaylist = (item) => (
-    <LinkToPlaylist href={`/#${item.split(' ')[0]}`}>
+    <LinkToPlaylist href={`/#${item.split(' ')[0]}`} key={`id_${item.split(' ')[0]}`}>
       <ItemLink>{item}</ItemLink>
     </LinkToPlaylist>
   );
@@ -42,7 +42,7 @@ function MenuLateral({ categoryLinks }) {
 }
 
 MenuLateral.propTypes = {
-  categoryLinks: PropTypes.arrayOf().isRequired,
+  categoryLinks: PropTypes.arrayOf(String).isRequired,
 };
 
 export default MenuLateral;
