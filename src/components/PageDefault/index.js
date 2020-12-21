@@ -1,8 +1,10 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Footer from '../Footer';
 import MenuLateral from '../MenuLateral';
-import styled from 'styled-components';
-import dadosIniciais from './../../data/dados_iniciais.json';
+import dadosIniciais from '../../data/dados_iniciais.json';
 
 const AppWrapper = styled.div`
     background: linear-gradient(#000000, rgb(34, 42, 49));
@@ -25,25 +27,26 @@ const Main = styled.main`
     flex: 1;
 `;
 
-const PageDefault = ({ children }) => {
-
-    const getCategoryLinks = () => {
-        const dataLinks = dadosIniciais.categorias.map(({titulo}) => titulo);
-        return dataLinks;
-    }
-    return (
-        <>
-            <MenuLateral categoryLinks={getCategoryLinks()}/>
-            <AppWrapper>
-                <Main>
-                    {children}
-                </Main>
-                <Footer/> 
-            </AppWrapper>  
-        </> 
-    );
+function PageDefault({ children }) {
+  const getCategoryLinks = () => {
+    const dataLinks = dadosIniciais.categorias.map(({ titulo }) => titulo);
+    return dataLinks;
+  };
+  return (
+    <>
+      <MenuLateral categoryLinks={getCategoryLinks()} />
+      <AppWrapper>
+        <Main>
+          {children}
+        </Main>
+        <Footer />
+      </AppWrapper>
+    </>
+  );
 }
 
-
+PageDefault.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default PageDefault;

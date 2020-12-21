@@ -7,32 +7,32 @@ function Footer() {
 
       <Thanks>
         <p>
-          developed and customized 
-          <br/>
+          developed and customized
+          <br />
           by
-          <br/>
+          <br />
           Marcos Rodrigues
-          <br/>
+          <br />
         </p>
-        
+
         <Links href="https://github.com/MarKus-del" target="_blank">
           Markus-del on github
         </Links>
       </Thanks>
 
       <Thanks>
-      <Links href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </Links>
-      <p>
-        Orgulhosamente criado durante a
-        <br/>
-        <Links href="https://www.alura.com.br/" target="_blank">
-          Imersão React da Alura
+        <Links href="https://www.alura.com.br/">
+          <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
         </Links>
-      </p>
+        <p>
+          Orgulhosamente criado durante a
+          <br />
+          <Links href="https://www.alura.com.br/" target="_blank">
+            Imersão React da Alura
+          </Links>
+        </p>
       </Thanks>
-      
+
     </FooterBase>
   );
 }

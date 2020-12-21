@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Logo = styled.img`
@@ -66,7 +65,7 @@ export const YourPlaylist = styled.div`
     @media(max-width: 800px){
       display: none;
     }
-`; 
+`;
 
 export const Title = styled.summary`
   padding: 10px 30px 15px;
@@ -101,4 +100,3 @@ export const ItemLink = styled.li`
     background: rgb(38, 38, 38);
   }
 `;
-

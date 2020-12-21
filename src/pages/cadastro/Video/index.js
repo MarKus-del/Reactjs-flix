@@ -1,17 +1,16 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import PageDefault from '../../../components/PageDefault';
 
-const CadastroVideo = () => {
-    return (
-        <PageDefault >
+const CadastroVideo = () => (
+  <PageDefault>
 
-            <h1>cadastro de video</h1>
-            <div>
-                insira seu video aqui ;)
-            </div>
+    <h1>cadastro de video</h1>
+    <div>
+      insira seu video aqui ;)
+    </div>
 
-        </PageDefault>
-    );
-}
+  </PageDefault>
+);
 
 export default CadastroVideo;
