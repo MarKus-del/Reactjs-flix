@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Logo = styled.img`
@@ -25,6 +26,12 @@ export const MenuWrapper = styled.nav`
   background:  #141414;
   border-right: 2px solid #fff;
 
+  div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   body {
     --bodyPaddingTop: 94px;
@@ -48,47 +55,50 @@ export const MenuWrapper = styled.nav`
 
 `;
 
-export const YourPlaylist = styled.details`
+export const YourPlaylist = styled.div`
     margin-top: 50px;
     color: var(--white);
     width: 100%;
     display: flex;
-    background: initial;
-
     justify-self: end;
 
-    summary{
-      height: initial;
-      padding: 15px 0px 10px;
-      font-weight:bold;
-      outline: 0;
-    }
-
-    &[open] > summary{
-      background: rgb(38, 38, 38);
-    }
-
-    ul{
-      list-style: none;
-      width:100% ;
-      padding: 0px;
-      text-align: justify;
-      margin: 0px;
-    }
-
-    ul li {
-      padding: 15px
-    }
-
-    ul li:hover {
-      background: rgb(38, 38, 38);
-    }
-
-    ul li a{
-      text-decoration: none
-    }
-
+    
     @media(max-width: 800px){
       display: none;
     }
 `; 
+
+export const Title = styled.summary`
+  padding: 10px 30px 15px;
+  font-weight:bold;
+  outline: 0;
+  border-bottom: 1px solid white;
+`;
+
+export const ContainerLinks = styled.ul`
+  list-style: none;
+  width: 100%;
+  padding-top: 25px;
+  padding-left: 0px;
+  margin: 0px;
+  `;
+
+export const LinkToPlaylist = styled.a`
+  text-decoration: none;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+`;
+
+export const ItemLink = styled.li`
+
+  padding-left: 15px;
+  height:40px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  &:hover{
+    background: rgb(38, 38, 38);
+  }
+`;
+

@@ -6,15 +6,10 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 
-
-
 function Home() {
 
   return ( 
-      <PageDefault categoryLinks={function() {
-        const dataLinks = dadosIniciais.categorias.map(({titulo}) => titulo);
-        return dataLinks;
-      }()}>
+      <PageDefault>
         
         <BannerMain
           videoTitle={dadosIniciais.categorias[0].videos[0].titulo}

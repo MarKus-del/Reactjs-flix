@@ -2,40 +2,40 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Image from '../../assets/image/logoFlix.png';
-import { MenuWrapper, Logo, YourPlaylist  } from './styles';
+import { MenuWrapper, Logo, YourPlaylist, ContainerLinks,Title, ItemLink, LinkToPlaylist  } from './styles';
 import Button from '../Button';
 
 
 const MenuLateral = ({categoryLinks}) => {
     const Links = categoryLinks;
+
+    const renderListPlaylist = (item) => {
+        return (
+            <LinkToPlaylist  href={`/#`+item.split(" ")[0]} >
+                <ItemLink>{item}</ItemLink>
+            </LinkToPlaylist>
+    )
+    }
+
     return(
         <MenuWrapper >
                 <div>
-                <Link  to="/">
-                    <Logo   src={Image} alt="Logo"/>
-                </Link>
-                <YourPlaylist>
-                    <summary>Your Playlist</summary>
-                    <ul>
-                        {Links.map((item) => {
-                            return (
-                                <li>
-                                    <a href={"#" + item.split(" ")}>
-                                        {item}
-                                    </a>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                    
-                </YourPlaylist>
-                </div>
+                    <Link  to="/">
+                        <Logo   src={Image} alt="Logo"/>
+                    </Link>
+                    {Links && (
+                        <YourPlaylist>
+                            <Title>Your Playlist</Title>
+                            <ContainerLinks>
+                                {Links.map(renderListPlaylist)}
+                            </ContainerLinks>  
+                        </YourPlaylist>
+                    )}
                 
-           
-            
-
-            <Button as={Link}  to="/cadastro/video"> 
-                Novo Video
+                </div>
+         
+            <Button as={Link}  to="/cadastro/categoria"> 
+                New Category
             </Button>           
         </MenuWrapper>
     );

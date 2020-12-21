@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
-
 
 const CadastroVideo = () => {
     return (
-        <PageDefault>
+        <PageDefault >
 
             <h1>cadastro de video</h1>
             <div>
