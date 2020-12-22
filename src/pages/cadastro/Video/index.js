@@ -26,8 +26,7 @@ function CadastroVideo() {
       .then((categoriaFromServer) => {
         setCategory(categoriaFromServer.titulo);
       })
-      .catch((err) => {
-        console.log('erro pego', err);
+      .catch(() => {
         history.push('/404');
       });
   }, []);
