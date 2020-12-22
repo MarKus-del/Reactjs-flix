@@ -28,7 +28,6 @@ function CadastroCategoria() {
   function handleSubmit(event) {
     event.preventDefault();
     categoryRepository.saveCategory(values).then((categoria) => {
-      console.log(categoria.id);
       history.push(`/cadastro/video/${categoria.id}`);
     });
     setCategorias([
