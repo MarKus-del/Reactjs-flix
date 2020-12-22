@@ -1,32 +1,36 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 import PageDefault from '../../../components/PageDefault';
-import { ContainerPrincipal } from './style';
+import { ContainerPrincipal } from '../style';
 import FormField from '../../../components/FormField';
+import categoryRepository from '../../../repositories/categoria';
 
 function CadastroCategoria() {
+  const history = useHistory();
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
-  const [values, setValues] = useState(valoresIniciais);
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
+  useEffect(() => {
+    categoryRepository.getAll().then((resposta) => {
+      setCategorias([
+        ...resposta,
+      ]);
     });
-  }
-  function clearForm() {
-    setValues(valoresIniciais);
-  }
+  }, []);
+
   function handleSubmit(event) {
     event.preventDefault();
+    categoryRepository.saveCategory(values).then((categoria) => {
+      console.log(categoria.id);
+      history.push(`/cadastro/video/${categoria.id}`);
+    });
     setCategorias([
       ...categorias,
       values,
@@ -34,36 +38,20 @@ function CadastroCategoria() {
 
     clearForm();
   }
-  function handleChange(event) {
-    const attribute = event.target.getAttribute('name');
-    setValue(attribute, event.target.value);
-  }
-
-  useEffect(() => {
-    const URL_TOP = 'http://localhost:8080/categorias';
-    // E a ju ama variáveis
-    fetch(URL_TOP)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
-  }, []);
 
   return (
     <PageDefault>
       <ContainerPrincipal>
         <h1>
           cadastro de categoria:
-          {values.nome}
+          {values.titulo}
         </h1>
         <form onSubmit={handleSubmit}>
           <FormField
-            conteudo="Nome da categoria"
-            name="nome"
+            conteudo="titulo da categoria"
+            name="titulo"
             type="text"
-            value={values.nome}
+            value={values.titulo}
             functionHandle={handleChange}
           />
           <FormField
@@ -81,7 +69,7 @@ function CadastroCategoria() {
             functionHandle={handleChange}
           />
 
-          <Button>Enviar</Button>
+          <Button>Cadastrar</Button>
         </form>
 
         {categorias.length === 0 && (
@@ -93,8 +81,8 @@ function CadastroCategoria() {
 
         <ul>
           {categorias.map((categoria) => (
-            <li key={`${categoria.nome}`}>
-              {categoria.nome}
+            <li key={`${categoria.titulo}`}>
+              {categoria.titulo}
             </li>
           ))}
         </ul>

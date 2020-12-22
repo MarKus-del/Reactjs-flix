@@ -15,6 +15,8 @@ const Button = styled.button`
         transition: background 0.5s;
         background-color: #2980b9;
         box-sizing: border-box;
+        margin: 0px 15px;
+        margin-bottom: 10px;
     
     &:hover,
     &:focus {
@@ -22,11 +24,12 @@ const Button = styled.button`
         color: #2980b9;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
+        margin: 0px;
         background: var(--primary);
         border-radius: 0;
         border: 0;

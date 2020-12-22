@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Footer from '../Footer';
 import MenuLateral from '../MenuLateral';
-import dadosIniciais from '../../data/dados_iniciais.json';
 
 const AppWrapper = styled.div`
     background: linear-gradient(#000000, rgb(34, 42, 49));
@@ -15,9 +14,9 @@ const AppWrapper = styled.div`
     flex-direction: column;
     flex: 1;
 
-    @media(max-width: 800px){
+    @media(max-width: 900px){
       margin-left: 0;
-      padding-top: 40px;
+      padding-top: 65px;
     }
 `;
 
@@ -28,13 +27,9 @@ const Main = styled.main`
 `;
 
 function PageDefault({ children }) {
-  const getCategoryLinks = () => {
-    const dataLinks = dadosIniciais.categorias.map(({ titulo }) => titulo);
-    return dataLinks;
-  };
   return (
     <>
-      <MenuLateral categoryLinks={getCategoryLinks()} />
+      <MenuLateral />
       <AppWrapper>
         <Main>
           {children}

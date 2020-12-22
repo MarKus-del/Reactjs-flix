@@ -1,10 +1,324 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Front-end",
-            "descricao": "Uma categoria show",
-            "cor": "#cbd1ff"
-        }    
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Aprendendo com a Alura",
+      "cor": "#2980b9",
+      "link_extra": {
+        "text": "Alura",
+        "url": "https://www.alura.com.br"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Node with Rocketseat",
+      "cor": "#8e44ad",
+      "link_extra": {
+        "text": "Rocketseat",
+        "url": "https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "ReactJS",
+      "cor": "#3498db",
+      "link_extra": {
+        "text": "Primeiros passos com ReactJS"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "API in Nodejs",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Criação de API's em NodeJS"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "More React",
+      "cor": "#2980b9",
+      "link_extra": {
+        "text": "Conhecendo mais afundo o ReactJS"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Nextjs",
+      "cor": "#16a085",
+      "link_extra": {
+        "text": "Framework NextJS"
+      }
+    },
+    {
+      "titulo": "Gatsby",
+      "descricao": "Framework Gatsby",
+      "cor": "#c05dbd",
+      "id": 7
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "O que faz uma desenvolvedora front-end?",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=4"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "O que é JavaScript? ",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=NaVSbnnV75Q"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "O que é uma Single-Page Application? (SPA)",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=opxYpCKzlLk&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=16"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "O que é Node JS?",
+      "url": "https://www.youtube.com/watch?v=GKR6uSvEj8w&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=15"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "O que é Biblioteca, Framework e API?",
+      "url": "https://www.youtube.com/watch?v=F0H4HPXdZog&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=8"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "O que é REST?",
+      "url": "https://www.youtube.com/watch?v=weQ8ssA6iBU&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=12"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "O que são Git e Github?",
+      "url": "https://www.youtube.com/watch?v=P4BNi_yPehc&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=24"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "GitHub sem linhas de comando: Github Desktop",
+      "url": "https://www.youtube.com/watch?v=vhqTiQdUHfY&list=PLh2Y_pKOa4UcBRWcWAEp4d4M7INLCec1f&index=25"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Node.js: Iniciando da teoria à prática",
+      "url": "https://www.youtube.com/watch?v=DiXbJL3iWVs&list=PL85ITvJ7FLogMzb2s6K5wKpQK2nL76vUK&index=4"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "SQL no Node.js com Knex.js",
+      "url": "https://www.youtube.com/watch?v=U7GjS3FuSkA&list=PL85ITvJ7FLogMzb2s6K5wKpQK2nL76vUK&index=3"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "SQL no Node.js com Sequelize",
+      "url": "https://www.youtube.com/watch?v=Fbu7z5dXcRs&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=11"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Background jobs (filas) no Node.js com Redis",
+      "url": "https://www.youtube.com/watch?v=uonKHztGhko&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=10"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Deploy de apps Node.js",
+      "url": "https://www.youtube.com/watch?v=ICIz5dE3Xfg&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=9"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "TypeScript, o início, de forma prática",
+      "url": "https://www.youtube.com/watch?v=0mYq5LrQN1s&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=5"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "[API NodeJS + Express + Mongo] Estrutura e cadastro",
+      "url": "https://www.youtube.com/watch?v=BN_8bCfVp88&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "[API NodeJS + Express + Mongo] Autenticação",
+      "url": "https://www.youtube.com/watch?v=KKTX1l3sZGk&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=2"
+    },
+    {
+      "id": 17,
+      "categoriaId": 2,
+      "titulo": "[API NodeJS + Express + Mongo] Recuperação de senha com NodeMailer",
+      "url": "https://www.youtube.com/watch?v=Zwdv9RllPqU&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=3"
+    },
+    {
+      "id": 18,
+      "categoriaId": 2,
+      "titulo": "[API NodeJS + Express + Mongo] CRUD e relacionamentos com MongoDB",
+      "url": "https://www.youtube.com/watch?v=GAZdUyIV3ms&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=4"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "React JS Curso Rápido",
+      "url": "https://www.youtube.com/watch?v=XQxitgyZ_S4&t=1370s"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "ReactJS primeiros passos - Introdução Prática",
+      "url": "https://www.youtube.com/watch?v=IOJoJGDowEY"
+    },
+    {
+      "id": 21,
+      "categoriaId": 3,
+      "titulo": "React JS - Criando um App do Zero",
+      "url": "https://www.youtube.com/watch?v=tbLziJchz48&t=492s"
+    },
+    {
+      "id": 22,
+      "categoriaId": 3,
+      "titulo": "Estrutura de pastas para ReactJS/React Native",
+      "url": "https://www.youtube.com/watch?v=X2RKRKdqqwM"
+    },
+    {
+      "id": 23,
+      "categoriaId": 4,
+      "titulo": "Criando APIs com NodeJs",
+      "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "titulo": "TypeScript com NodeJS do jeito certo!",
+      "url": "https://www.youtube.com/watch?v=aTf8QTjw4RE&t=22s"
+    },
+    {
+      "id": 25,
+      "categoriaId": 4,
+      "titulo": "Princípios SOLID em uma API REST com Node.js e TypeScript",
+      "url": "https://www.youtube.com/watch?v=vAV4Vy4jfkc"
+    },
+    {
+      "id": 26,
+      "categoriaId": 4,
+      "titulo": "API RESTful",
+      "url": "https://www.youtube.com/watch?v=Abo_GiaunlU"
+    },
+    {
+      "id": 27,
+      "categoriaId": 4,
+      "titulo": "Curso de Node.JS",
+      "url": "https://www.youtube.com/watch?v=LLqq6FemMNQ&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "titulo": "React Hooks com TypeScript",
+      "url": "https://www.youtube.com/watch?v=GOB-lawExXc&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=8"
+    },
+    {
+      "id": 29,
+      "categoriaId": 5,
+      "titulo": "Formulários no ReactJS & React Native com Unform",
+      "url": "https://www.youtube.com/watch?v=P65RJTTqkN4&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=6"
+    },
+    {
+      "id": 30,
+      "categoriaId": 5,
+      "titulo": "Autenticação no React Native / ReactJS com Context API & Hooks",
+      "url": "https://www.youtube.com/watch?v=KISMYYXSIX8&list=PL85ITvJ7FLoiNndfuEs2So-MFLSMvBmmD&index=3"
+    },
+    {
+      "id": 31,
+      "categoriaId": 5,
+      "titulo": "COMO MELHORAR SEU CODIGO JAVASCRIPT (ESLINT + PRETTIER + EDITORCONFIG) ",
+      "url": "https://www.youtube.com/watch?v=9UJYaAt7v2o&list=PLkFMdTTdI9c074NdAQwIIfB1QaE8y0pm7&index=2"
+    },
+    {
+      "id": 32,
+      "categoriaId": 5,
+      "titulo": "Qual a diferença entre SPA, SSG e SSR?",
+      "url": "https://www.youtube.com/watch?v=VM_ncQcQdmY&list=PLbV6TI03ZWYXRHSxSz3aV0IQaQsfrVZsf"
+    },
+    {
+      "id": 33,
+      "categoriaId": 5,
+      "titulo": "Como usar React Context (com Hooks)",
+      "url": "https://www.youtube.com/watch?v=FsCBw9X9U84&t=4s"
+    },
+    {
+      "id": 34,
+      "categoriaId": 5,
+      "titulo": "React Hooks - useState ",
+      "url": "https://www.youtube.com/watch?v=Z5zUmY01nrc"
+    },
+    {
+      "id": 35,
+      "categoriaId": 6,
+      "titulo": "NextJS - O que é?",
+      "url": "https://www.youtube.com/watch?v=X3W-YFe2_io"
+    },
+    {
+      "id": 36,
+      "categoriaId": 6,
+      "titulo": "Tutorial NextJS Fullstack",
+      "url": "https://www.youtube.com/watch?v=MeYibJFi7p0&t=1s"
+    },
+    {
+      "id": 37,
+      "categoriaId": 6,
+      "titulo": "NEXT.JS: O FRAMEWORK QUE VOCÊ DEVERIA CONHECER",
+      "url": "https://www.youtube.com/watch?v=9eI0o8io7I0"
+    },
+    {
+      "id": 38,
+      "categoriaId": 6,
+      "titulo": " Introdução: Como criar site com React e Next.js",
+      "url": "https://www.youtube.com/watch?v=WRFzOcPNcfY&list=PLmY5AEiqDWwCKtqpOg7z4sJQLlULms9_K"
+    },
+    {
+      "titulo": "api em nextjs",
+      "url": "https://www.youtube.com/watch?v=BT7novtdAgI",
+      "categoriaId": "6",
+      "categoria": "Nextj",
+      "id": 39
+    },
+    {
+      "titulo": "api en nextjs",
+      "url": "https://www.youtube.com/watch?v=BT7novtdAgI",
+      "categoriaId": "6",
+      "id": 40
+    },
+    {
+      "titulo": "api en nextjs",
+      "url": "https://www.youtube.com/watch?v=BT7novtdAgI",
+      "categoriaId": "6",
+      "id": 41
+    },
+    {
+      "titulo": "api em nextjs",
+      "url": "https://www.youtube.com/watch?v=BT7novtdAgI",
+      "categoriaId": 6,
+      "id": 42
+    },
+    {
+      "titulo": "gatbsy pwa com react",
+      "url": "https://www.youtube.com/watch?v=mCrK1r9ua34",
+      "categoriaId": 7,
+      "id": 43
+    }
+  ]
 }

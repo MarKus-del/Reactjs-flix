@@ -1,21 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import Image from '../../assets/image/logoFlix.png';
 import {
-  MenuWrapper, Logo, YourPlaylist, ContainerLinks, Title, ItemLink, LinkToPlaylist,
+  MenuWrapper, Logo, YourPlaylist, ContainerLinks, Title,
+  LinkToPlaylist, ItemLink, Divisor,
 } from './styles';
 import Button from '../Button';
+import categoryRepository from '../../repositories/categoria';
 
-function MenuLateral({ categoryLinks }) {
-  const Links = categoryLinks;
+function MenuLateral() {
+  const [categorias, setCategorias] = useState([]);
 
-  const renderListPlaylist = (item) => (
-    <LinkToPlaylist href={`/#${item.split(' ')[0]}`} key={`id_${item.split(' ')[0]}`}>
-      <ItemLink>{item}</ItemLink>
-    </LinkToPlaylist>
-  );
+  useEffect(() => {
+    categoryRepository.getAll().then((data) => {
+      const categoriasTitulos = data.map((categoria) => categoria.titulo);
+      setCategorias([
+        ...categoriasTitulos,
+      ]);
+    });
+  }, []);
 
   return (
     <MenuWrapper>
@@ -23,11 +26,16 @@ function MenuLateral({ categoryLinks }) {
         <Link to="/">
           <Logo src={Image} alt="Logo" />
         </Link>
-        {Links && (
+        {categorias && (
         <YourPlaylist>
           <Title>Your Playlist</Title>
+          <Divisor />
           <ContainerLinks>
-            {Links.map(renderListPlaylist)}
+            {categorias.map((linkDaCategoria) => (
+              <LinkToPlaylist href={`/#${linkDaCategoria.split(' ')[0]}`} key={`id_${linkDaCategoria.split(' ')[0]}`}>
+                <ItemLink>{linkDaCategoria}</ItemLink>
+              </LinkToPlaylist>
+            ))}
           </ContainerLinks>
         </YourPlaylist>
         )}
@@ -40,9 +48,5 @@ function MenuLateral({ categoryLinks }) {
     </MenuWrapper>
   );
 }
-
-MenuLateral.propTypes = {
-  categoryLinks: PropTypes.arrayOf(String).isRequired,
-};
 
 export default MenuLateral;

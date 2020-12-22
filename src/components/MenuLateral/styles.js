@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Logo = styled.img`
-  max-width: 168px;
-  
-  @media (max-width: 800px) { 
-      max-width: 105px; 
-  }
+  margin-top: 15px;
+  max-width: 130px;
 `;
 
 export const MenuWrapper = styled.nav`
@@ -16,16 +13,18 @@ export const MenuWrapper = styled.nav`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 15px 0px;
+  //padding: 15px 0px;
   
   background:  #141414;
   border-right: 2px solid #fff;
 
   div{
+    height: inherit;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,14 +37,16 @@ export const MenuWrapper = styled.nav`
   }
 
   
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 100%;
     flex-direction: row;
-    height: 40px;
+    height: 65px;
     justify-content: center;
+    align-items: center;
     border: none;
     border-bottom: 2px solid #fff;
 
+    
     body {
       --bodyPaddingTop: 40px;
       padding-top: var(--bodyPaddingTop);
@@ -61,17 +62,25 @@ export const YourPlaylist = styled.div`
     display: flex;
     justify-self: end;
 
-    
-    @media(max-width: 800px){
+    @media(max-width: 900px){
       display: none;
     }
 `;
 
 export const Title = styled.summary`
-  padding: 10px 30px 15px;
+  padding: 10px 0px 15px;
   font-weight:bold;
   outline: 0;
-  border-bottom: 1px solid white;
+  @media(max-width: 900px){
+      display: none;
+    }
+`;
+
+export const Divisor = styled.hr`
+  width: 70%;
+  @media(max-width: 900px){
+      display: none;
+    }
 `;
 
 export const ContainerLinks = styled.ul`
@@ -80,6 +89,9 @@ export const ContainerLinks = styled.ul`
   padding-top: 25px;
   padding-left: 0px;
   margin: 0px;
+  @media(max-width: 900px){
+      display: none;
+    }
   `;
 
 export const LinkToPlaylist = styled.a`
@@ -91,7 +103,7 @@ export const LinkToPlaylist = styled.a`
 
 export const ItemLink = styled.li`
 
-  padding-left: 15px;
+  padding: 0px 15px;
   height:40px;
   display: flex;
   justify-content: baseline;

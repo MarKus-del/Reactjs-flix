@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
+import {
+  VideoCardGroupContainer, Title, ExtraLink, IconAdd,
+} from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
@@ -17,12 +19,15 @@ function Carousel({
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: categoryColor || 'red' }}>
+          <Title style={{ backgroundColor: categoryColor || 'red' }} id={categoryTitle.split(' ')[0]}>
             {categoryTitle}
           </Title>
+          <IconAdd to={`/cadastro/video/${category.id}`} style={{ backgroundColor: categoryColor || 'red' }}>
+            &#43;
+          </IconAdd>
           {categoryExtraLink
             && (
-            <ExtraLink href={categoryExtraLink.url} id={categoryTitle.split(' ')[0]}>
+            <ExtraLink href={categoryExtraLink.url}>
               {categoryExtraLink.text}
             </ExtraLink>
             )}
@@ -52,7 +57,7 @@ function Carousel({
 
 Carousel.propTypes = {
   ignoreFirstVideo: PropTypes.bool,
-  category: PropTypes.shape.isRequired,
+  category: PropTypes.shape().isRequired,
 };
 
 Carousel.defaultProps = {

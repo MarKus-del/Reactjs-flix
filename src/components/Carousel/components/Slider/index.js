@@ -42,11 +42,37 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: true,
-      speed: 300,
-      centerMode: false,
-      variableWidth: true,
+      infinite: false,
+      speed: 500,
       adaptiveHeight: true,
+      slidesToScroll: 1,
+      slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     }}
     >
       {children}

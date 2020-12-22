@@ -28,4 +28,25 @@ export const VideoCardContainer = styled.a`
   &:not(:first-child) {
     margin-left: 20px;
   }
+  @media(max-width: 1300px){
+    width: 300px;
+  }
+
+  @media(max-width: 1120px){
+    width: 256px;
+  }
+
+  @media(max-width: 980px){
+    width: 350px;
+    margin: 0px auto;
+  }
+
+  @media(max-width: 750px){
+    width: 220px;
+    margin: 0px auto;
+  }
+  @media(max-width: 500px){
+    width: 300px;
+    margin: 0px auto;
+  }
 `;
